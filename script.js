@@ -1,10 +1,11 @@
 class randomLogos { 
 
-    constructor(availableLogos, container_class, logo_class) {
+    constructor(availableLogos, container_class, logo_class, timeout) {
 
         this.availableLogos  = availableLogos;
         this.container       = document.getElementById(container_class);
         this.currentLogos    = this.container.getElementsByClassName(logo_class);
+        this.timeout         = timeout;
 
         // Only run when needed
         if(!this.container || this.currentLogos.length < 1) {
@@ -60,7 +61,7 @@ class randomLogos {
     }
 
     init() {
-        setTimeout(this.change.bind(this), 3000);
+        setTimeout(this.change.bind(this), this.timeout );
     }
 
 }
