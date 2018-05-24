@@ -1,8 +1,9 @@
-# random-logo-scroller2
+# Random logo scroller
 <p>Simple class for randomly switching logo's in a grid. Example: https://www.7lab.nl/ </p>
 
-<h1>// Create new class with logo url array</h1>
+<h2>Usage</h2>
+<strong>// Create new class with logo url array</strong>
 randomLogos = new randomLogos(LOGOS, CONTAINER_CLASS, LOGO_CLASS, TIMEOUT);
 		
-<h1>// Init switcher</h1>
+<strong>// Init switcher</strong>
 randomLogos.init();
